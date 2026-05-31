@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelo | Careers – Join our AI travel team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .careers-hero { background: linear-gradient(115deg, #0A1C2F, #1C3A4F); padding: 6rem 0 4rem; border-radius: 0 0 48px 48px; margin-bottom: 3rem; }
+    .job-listings { display: flex; flex-direction: column; gap: 1.5rem; margin: 2.5rem 0; }
+    .job-card { background: var(--clr-bg-card); border-radius: 28px; padding: 1.8rem 2rem; border: 1px solid var(--clr-border-light); transition: all 0.25s; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .job-card:hover { transform: translateX(8px); box-shadow: 0 12px 22px -12px rgba(0,0,0,0.1); }
+    .job-info h3 { margin-bottom: 0.4rem; }
+    .job-meta { display: flex; gap: 1rem; color: var(--clr-text-muted); font-size: 0.85rem; margin-top: 0.5rem; }
+    .perks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .perk-item { background: rgba(199,92,60,0.05); padding: 1.2rem; border-radius: 24px; text-align: center; }
+    @media (max-width: 700px) { .job-card { flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+<header class="header" id="header"><div class="container nav-container"><a href="index.html" class="logo"><i class="fas fa-compass"></i> Travelo</a><button class="mobile-menu-btn" id="menuToggleBtn"><i class="fas fa-bars"></i></button></div></header>
+<div class="drawer-overlay" id="drawerOverlay"></div><div class="side-drawer" id="sideDrawer"><div class="drawer-header"><span>Menu</span><button class="drawer-close-btn" id="closeDrawerBtn"><i class="fas fa-times"></i></button></div><div class="drawer-nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div><div class="drawer-footer">© Travelo 2026</div></div>
+
+<main>
+  <div class="careers-hero"><div class="container"><h1 style="color:white; font-size:3rem;">Shape the future of<br>intelligent travel</h1><p style="color:#D9C5A7; max-width:600px;">Join a diverse team of builders, dreamers, and data lovers. Remote‑first, equity, and endless exploration.</p><a href="#openings" class="btn btn-primary" style="margin-top:1.5rem;">View open roles →</a></div></div>
+  <div class="container section" id="openings">
+    <div class="section-header"><h2>Open positions</h2><p>Help us redefine how people discover the world.</p></div>
+    <div class="job-listings">
+      <div class="job-card"><div class="job-info"><h3>Senior ML Engineer – Recommendations</h3><div class="job-meta"><span><i class="fas fa-map-pin"></i> Remote (EU/US)</span><span><i class="fas fa-clock"></i> Full-time</span></div><p>Build collaborative filtering & LLM-based travel rankers.</p></div><a href="#" class="btn btn-primary" style="padding:0.6rem 1.5rem;">Apply →</a></div>
+      <div class="job-card"><div class="job-info"><h3>Product Designer – AI Experiences</h3><div class="job-meta"><span><i class="fas fa-map-pin"></i> Berlin / Remote</span><span><i class="fas fa-clock"></i> Full-time</span></div><p>Design conversational trip planners and personalised dashboards.</p></div><a href="#" class="btn btn-primary">Apply →</a></div>
+      <div class="job-card"><div class="job-info"><h3>Travel Curator & Local Expert</h3><div class="job-meta"><span><i class="fas fa-map-pin"></i> Global – any region</span><span><i class="fas fa-clock"></i> Contract</span></div><p>Source hidden gems, write authentic guides, train our content AI.</p></div><a href="#" class="btn btn-primary">Apply →</a></div>
+      <div class="job-card"><div class="job-info"><h3>Head of Growth (Travel Tech)</h3><div class="job-meta"><span><i class="fas fa-map-pin"></i> NYC / Remote</span><span><i class="fas fa-clock"></i> Full-time</span></div><p>Scale Travelo’s community and B2B partnerships.</p></div><a href="#" class="btn btn-primary">Apply →</a></div>
+    </div>
+    <div class="section-header"><h2>Perks that fuel you</h2></div><div class="perks-grid"><div class="perk-item"><i class="fas fa-globe" style="font-size:2rem; color:var(--clr-accent);"></i><h4>Work anywhere</h4><small>Remote‑first culture + co‑working stipend</small></div><div class="perk-item"><i class="fas fa-chart-line"></i><h4>Equity package</h4><small>Own a piece of Travelo</small></div><div class="perk-item"><i class="fas fa-plane"></i><h4>Travel credit</h4><small>$2k/year to explore and test our product</small></div></div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="logo">Travelo</div><p>AI travel companion</p></div><div class="footer-links"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 Travelo – Personalized travel system</span></div></div></footer>
+
+<script>// same drawer + scroll logic as about page (omitted for brevity but include full working)
+const header=document.getElementById('header'),menuToggle=document.getElementById('menuToggleBtn'),drawer=document.getElementById('sideDrawer'),overlay=document.getElementById('drawerOverlay'),closeBtn=document.getElementById('closeDrawerBtn');function openDrawer(){drawer.classList.add('active');overlay.classList.add('active');document.body.style.overflow='hidden';}function closeDrawer(){drawer.classList.remove('active');overlay.classList.remove('active');document.body.style.overflow='';}if(menuToggle)menuToggle.addEventListener('click',openDrawer);if(closeBtn)closeBtn.addEventListener('click',closeDrawer);if(overlay)overlay.addEventListener('click',closeDrawer);document.querySelectorAll('.drawer-nav a').forEach(link=>link.addEventListener('click',closeDrawer));window.addEventListener('scroll',()=>{if(window.scrollY>20)header.classList.add('scrolled');else header.classList.remove('scrolled');});</script>
+</body>
+</html>

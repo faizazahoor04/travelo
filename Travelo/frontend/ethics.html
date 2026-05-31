@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo | AI Ethics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-content {
+            background: var(--clr-bg-card);
+            border-radius: var(--radius-md);
+            padding: 2rem 2.5rem;
+            box-shadow: 0 12px 30px -12px rgba(0,0,0,0.05);
+            border: 1px solid var(--clr-border-light);
+        }
+        .legal-content h2 { font-size: 1.8rem; margin: 1.5rem 0 0.8rem; color: var(--clr-primary); }
+        .legal-content h3 { font-size: 1.3rem; margin: 1.2rem 0 0.6rem; font-weight: 600; }
+        .legal-content p, .legal-content li { line-height: 1.6; }
+        .ethics-badge { background: rgba(199,92,60,0.1); padding: 0.5rem 1rem; border-radius: 60px; display: inline-block; font-weight: 600; margin-bottom: 1rem; }
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--clr-accent); color: white; width: 48px; height: 48px; border-radius: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; cursor: pointer; border: none; z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.25s ease; box-shadow: var(--btn-shadow); }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--clr-accent-soft); transform: translateY(-4px); }
+        @media (max-width: 640px) { .legal-content { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container nav-container">
+        <a href="index.html" class="logo"><i class="fas fa-compass"></i> Travelo</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="side-drawer" id="sideDrawer">
+    <div class="drawer-header"><span><i class="fas fa-route"></i> Travelo</span><button class="drawer-close-btn" id="drawerCloseBtn"><i class="fas fa-times"></i></button></div>
+    <div class="drawer-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+        <a href="terms.html"><i class="fas fa-file-contract"></i> Terms of Service</a>
+        <a href="ethics.html"><i class="fas fa-robot"></i> AI Ethics</a>
+        <a href="support.html"><i class="fas fa-headset"></i> Support</a>
+    </div>
+    <div class="drawer-footer"><p><i class="fas fa-map-pin"></i> Personalized journeys, responsibly.</p><p>&copy; 2025 Travelo AI</p></div>
+</div>
+
+<main>
+    <div class="container" style="padding-top: 7rem;">
+        <div class="section" style="padding-top: 1rem;">
+            <div class="section-header">
+                <h1>AI Ethics at Travelo</h1>
+                <p>Building responsible, fair, and transparent recommendation systems.</p>
+            </div>
+            <div class="legal-content">
+                <div class="ethics-badge"><i class="fas fa-hand-sparkles"></i> Human-centric AI · June 2025 Charter</div>
+                <p>Travelo’s AI engine is designed with ethics at its core. We believe that personalized travel recommendations should empower users without compromising privacy, fairness, or sustainability. This page outlines our ethical principles and safeguards.</p>
+
+                <h2>1. Fairness & Anti-Bias</h2>
+                <p>Our algorithms are regularly audited to avoid discrimination based on race, gender, age, disability, or socioeconomic background. We train models on diverse global travel data and actively mitigate stereotyping in destination suggestions.</p>
+
+                <h2>2. Transparency & Explainability</h2>
+                <p>You have the right to know why a recommendation was made. Travelo provides simple “Why this?” explanations next to each suggestion — showing factors like your past likes, budget, or trending destinations. We never use black-box models without human oversight.</p>
+
+                <h2>3. Privacy by Design</h2>
+                <p>Your data is never sold. We use differential privacy techniques and on-device processing where possible. You can delete your interaction history at any time, and our AI models are trained using anonymized aggregates.</p>
+
+                <h2>4. Sustainability & Carbon Awareness</h2>
+                <p>Travelo’s recommendation engine prioritizes low-carbon options when relevant (e.g., train vs. short-haul flights). We also display estimated carbon footprints for itineraries and suggest eco-certified accommodations.</p>
+
+                <h2>5. Human Oversight & Feedback Loops</h2>
+                <p>Every AI suggestion can be flagged or corrected. Our team reviews flagged content weekly to improve model behavior. Critical decisions (e.g., accessibility or safety alerts) involve human validation.</p>
+
+                <h2>6. Inclusive Representation</h2>
+                <p>We actively source travel data from underrepresented regions and local experts. Our content library avoids colonial or overly commercial narratives, highlighting authentic cultural experiences.</p>
+
+                <h2>7. Ongoing Accountability</h2>
+                <p>We publish an annual AI Ethics Report detailing bias audits, user feedback metrics, and environmental impact. An independent advisory board oversees our compliance.</p>
+
+                <p style="margin-top: 2rem; background: #F6F3EE; padding: 1.2rem; border-radius: 20px;"><i class="fas fa-comment-dots"></i> Have ethical concerns or suggestions? Contact our AI Ethics team: <strong>ethics@travelo.com</strong></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><div class="logo"><i class="fas fa-map-marked-alt"></i> Travelo</div><p>AI-powered travel companion that curates unique, responsible, and personalized journeys.</p><div class="social-icons"><a href="https://www.instagram.com/travelo708/"><i class="fab fa-instagram"></i></a><a href="https://x.com/travelo_00"><i class="fab fa-twitter"></i></a><a href="https://www.facebook.com/profile.php?id=61564542875358"><i class="fab fa-facebook"></i></a></div></div>
+            <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="#">Destinations</a></li><li><a href="#">How It Works</a></li></ul></div>
+            <div class="footer-links"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="ethics.html">AI Ethics</a></li></ul></div>
+            <div class="footer-links"><h4>Support</h4><ul><li><a href="support.html">Help Center</a></li><li><a href="support.html">Contact Us</a></li><li><a href="#">Status</a></li></ul></div>
+        </div>
+        <div class="footer-newsletter"><h4>Get travel inspiration</h4><p>Subscribe for personalized recommendations and ethical travel insights.</p><form class="newsletter-form"><input type="email" placeholder="Your email address" required><button type="submit" class="btn btn-primary">Subscribe</button></form></div>
+        <div class="footer-bottom"><span>&copy; 2026 Travelo — Intelligent & responsible travel.</span><p>Made with <span style="color: #ff6b6b;">♥</span> for curious travelers</p>
+</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+    (function() {
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const drawer = document.getElementById('sideDrawer');
+        const overlay = document.getElementById('drawerOverlay');
+        const closeBtn = document.getElementById('drawerCloseBtn');
+        const header = document.getElementById('header');
+        const backBtn = document.getElementById('backToTop');
+        function openDrawer() { drawer.classList.add('active'); overlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeDrawer() { drawer.classList.remove('active'); overlay.classList.remove('active'); document.body.style.overflow = ''; }
+        if(mobileBtn) mobileBtn.addEventListener('click', openDrawer);
+        if(closeBtn) closeBtn.addEventListener('click', closeDrawer);
+        if(overlay) overlay.addEventListener('click', closeDrawer);
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 80) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            if(backBtn) { if(window.scrollY > 400) backBtn.classList.add('show'); else backBtn.classList.remove('show'); }
+        });
+        if(backBtn) backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeDrawer(); });
+    })();
+</script>
+</body>
+</html>

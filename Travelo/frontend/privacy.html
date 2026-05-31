@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Travelo | Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-content {
+            background: var(--clr-bg-card);
+            border-radius: var(--radius-md);
+            padding: 2rem 2.5rem;
+            box-shadow: 0 12px 30px -12px rgba(0,0,0,0.05);
+            border: 1px solid var(--clr-border-light);
+        }
+        .legal-content h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 0.8rem;
+            color: var(--clr-primary);
+        }
+        .legal-content h2:first-of-type { margin-top: 0; }
+        .legal-content h3 {
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.6rem;
+            font-weight: 600;
+            color: var(--clr-text-heading);
+        }
+        .legal-content p, .legal-content li {
+            line-height: 1.6;
+            color: var(--clr-text-main);
+        }
+        .legal-content ul, .legal-content ol {
+            margin: 1rem 0 1rem 1.8rem;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--clr-accent);
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            cursor: pointer;
+            border: none;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s ease;
+            box-shadow: var(--btn-shadow);
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover {
+            background: var(--clr-accent-soft);
+            transform: translateY(-4px);
+        }
+        @media (max-width: 640px) {
+            .legal-content { padding: 1.5rem; }
+            .legal-content h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container nav-container">
+        <a href="index.html" class="logo"><i class="fas fa-compass"></i> Travelo</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="side-drawer" id="sideDrawer">
+    <div class="drawer-header">
+        <span><i class="fas fa-route"></i> Travelo</span>
+        <button class="drawer-close-btn" id="drawerCloseBtn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+        <a href="terms.html"><i class="fas fa-file-contract"></i> Terms of Service</a>
+        <a href="ethics.html"><i class="fas fa-robot"></i> AI Ethics</a>
+        <a href="support.html"><i class="fas fa-headset"></i> Support</a>
+    </div>
+    <div class="drawer-footer">
+        <p><i class="fas fa-map-pin"></i> Personalized journeys, responsibly.</p>
+        <p style="margin-top: 10px;">&copy; 2025 Travelo AI</p>
+    </div>
+</div>
+
+<main>
+    <div class="container" style="padding-top: 7rem;">
+        <div class="section" style="padding-top: 1rem;">
+            <div class="section-header">
+                <h1>Privacy Policy</h1>
+                <p>Last updated: April 23, 2026. Your trust is our compass.</p>
+            </div>
+            <div class="legal-content">
+                <p>At Travelo (“we,” “us,” or “our”), we respect your privacy and are committed to protecting your personal data. This privacy policy describes how we collect, use, and safeguard information when you use our personalized travel recommendation platform, including AI-driven suggestions, itineraries, and destination insights.</p>
+
+                <h2>1. Information We Collect</h2>
+                <p>To deliver tailor-made travel recommendations, we may collect the following categories of data:</p>
+                <ul>
+                    <li><strong>Identity Data:</strong> name, username, date of birth (for age-appropriate suggestions).</li>
+                    <li><strong>Contact Data:</strong> email address, travel alerts preferences.</li>
+                    <li><strong>Travel Preferences:</strong> past destinations, budget range, adventure vs. leisure, dietary needs, accessibility requirements.</li>
+                    <li><strong>Technical Data:</strong> IP address, device type, browser, cookies, and interaction analytics to improve our AI models.</li>
+                    <li><strong>Usage Data:</strong> pages visited, recommendations clicked, feedback provided (e.g., thumbs up/down on suggestions).</li>
+                </ul>
+
+                <h2>2. How We Use Your Information</h2>
+                <ul>
+                    <li>Generate personalized destination and activity recommendations using our AI engine.</li>
+                    <li>Improve algorithm fairness, accuracy, and relevance based on aggregate feedback.</li>
+                    <li>Send you travel inspiration, personalized offers, or service updates (with opt-out available).</li>
+                    <li>Ensure platform security, detect fraud, and comply with legal obligations.</li>
+                </ul>
+
+                <h2>3. Sharing Your Information</h2>
+                <ul>
+                    <li><strong>Service partners</strong> (e.g., mapping APIs, flight search engines) to fulfill recommendations you choose to book.</li>
+                    <li><strong>Legal authorities</strong> if required by law or to protect our rights.</li>
+                    <li><strong>Aggregated/anonymized data</strong> for research or partnership analytics (no identifiable information).</li>
+                </ul>
+
+                <h2>4. Data Retention & Security</h2>
+                <p>We retain your data as long as your account is active or as needed to provide services. You may request deletion. We implement encryption, access controls, and regular audits to safeguard your information.</p>
+
+                <h2>5. Your Privacy Rights</h2>
+                <p>Depending on your location (GDPR, CCPA, etc.), you have the right to access, correct, delete, or restrict processing of your personal data. You can also opt out of marketing communications. To exercise rights, contact <strong>privacy@travelo.com</strong>.</p>
+
+                <h2>6. Cookies & Tracking Technologies</h2>
+                <p>We use essential cookies for authentication and performance, plus optional analytics cookies to enhance recommendations. You can manage preferences via your browser settings.</p>
+
+                <h2>7. Children’s Privacy</h2>
+                <p>Travelo is not directed to individuals under 16. We do not knowingly collect data from children without parental consent.</p>
+
+                <h2>8. Updates to This Policy</h2>
+                <p>We may update this policy periodically. Continued use of Travelo signifies acceptance of any changes. Major updates will be notified via email or platform notification.</p>
+
+                <p style="margin-top: 2rem;"><i class="fas fa-envelope"></i> Questions? Contact our Data Protection Officer at <strong>dpo@travelo.com</strong></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><i class="fas fa-map-marked-alt"></i> Travelo</div>
+                <p>AI-powered travel companion that curates unique, responsible, and personalized journeys — just for you.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/travelo708/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/travelo_00"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564542875358"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul><li><a href="index.html">Home</a></li><li><a href="#">Destinations</a></li><li><a href="#">How It Works</a></li></ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="ethics.html">AI Ethics</a></li></ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul><li><a href="support.html">Help Center</a></li><li><a href="support.html">Contact Us</a></li><li><a href="#">Status</a></li></ul>
+            </div>
+        </div>
+        <div class="footer-newsletter">
+            <h4>Get travel inspiration</h4>
+            <p>Subscribe for personalized recommendations and ethical travel insights.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Travelo — Intelligent & responsible travel.</span>
+            <p>Made with <span style="color: #ff6b6b;">♥</span> for curious travelers</p>
+        </div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+    (function() {
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const drawer = document.getElementById('sideDrawer');
+        const overlay = document.getElementById('drawerOverlay');
+        const closeBtn = document.getElementById('drawerCloseBtn');
+        const header = document.getElementById('header');
+        const backBtn = document.getElementById('backToTop');
+        function openDrawer() { drawer.classList.add('active'); overlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeDrawer() { drawer.classList.remove('active'); overlay.classList.remove('active'); document.body.style.overflow = ''; }
+        if(mobileBtn) mobileBtn.addEventListener('click', openDrawer);
+        if(closeBtn) closeBtn.addEventListener('click', closeDrawer);
+        if(overlay) overlay.addEventListener('click', closeDrawer);
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 80) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            if(backBtn) { if(window.scrollY > 400) backBtn.classList.add('show'); else backBtn.classList.remove('show'); }
+        });
+        if(backBtn) backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeDrawer(); });
+    })();
+</script>
+</body>
+</html>

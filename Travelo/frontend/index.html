@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo | Precision Travel Intelligence</title>
+    <meta name="description" content="AI-driven travel planning tailored to your unique preferences. Discover your next perfect destination.">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✧</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Mountain Background for Hero Section */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+                              url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+            z-index: 1;
+        }
+        
+        .hero .container.hero-grid {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Grid Layout for How It Works Section */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        /* Ensure it stacks nicely on mobile devices */
+        @media (max-width: 768px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container nav-container">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-compass"></i> Travelo
+        </a>
+        <button class="mobile-menu-btn" id="menuToggleBtn" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+<div class="side-drawer" id="sideDrawer" role="dialog" aria-modal="true" aria-label="Navigaition menu">
+    <div class="drawer-header">
+        <span>Navigate</span>
+        <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="drawer-nav">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#destinations">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="signup.html" class="btn btn-primary" style="padding: 0.7rem 1.4rem; width: fit-content;">Sign up →</a>
+    </div>
+</div>
+
+<main>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Precision Travel,<br>Powered by Intelligence.</h1>
+                <p>Escape the generic. Our AI cross-references your unique personality profile with real-time global data to curate the exact trip you've been looking for.</p>
+                <div class="hero-buttons">
+                    <a href="#how-it-works" class="btn btn-primary">Start Persona Mapping <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#destinations" class="btn btn-outline">View Sample Itineraries</a>
+                </div>
+            </div>
+            <div class="hero-card-float">
+                <p><i class="fa-regular fa-star"></i> live intelligence</p>
+                <div class="match-badge">98% accuracy</div>
+                <p>Real-time destination scoring based on your behavioral DNA</p>
+                <a href="traveloai.html" class="btn btn-primary" style="margin-top: 1rem; background: rgba(255,255,245,0.15); backdrop-filter: blur(4px);">AI Assistant →</a>
+            </div>
+        </div>
+    </section>
+
+
+
+<section id="how-it-works" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Engineered for Discovery</h2>
+            <p>We replaced infinite scrolling with a proprietary three‑step algorithm that maps your travel DNA.</p>
+        </div>
+        
+        <div class="feature-stack">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>1. Persona Mapping</h3>
+                <p>We analyze your travel DNA: walking pace, culinary interests, and architectural tastes.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>2. Global Sourcing</h3>
+                <p>Our engine scans 50,000+ destinations, comparing weather, pricing, and seasonal data.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                <h3>3. Seamless Itinerary</h3>
+                <p>Receive a high-fidelity, day‑by‑day itinerary ready for booking hidden gems that match your budget.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="destinations" class="section destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Pakistan</h2>
+                <p>Scroll through the most popular destinations validated by our AI.</p>
+            </div>
+            
+            <div class="dest-grid-distinct">
+                <article class="dest-card">
+                    <div class="dest-img-container">
+                        <div class="dest-badge"><i class="fa-solid fa-star"></i> 99% Match</div>
+                        <img src="https://images.unsplash.com/photo-1684230715200-40f32e068bf2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aHVuemElMjB2YWxsZXklMjBwZWFrc3xlbnwwfHwwfHx8MA%3D%3D" alt="Hunza Valley Peaks">
+                    </div>
+                    <div class="dest-content">
+                        <h3>Hunza Valley</h3>
+                        <div class="dest-tags"><span class="tag">Mountain</span><span class="tag">Peaceful</span></div>
+                        <p>Experience the majestic Rakaposhi views and ancient Silk Road culture.</p>
+                        <div class="dest-footer"><span class="dest-price">From 45k PKR</span></div>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img-container">
+                        <div class="dest-badge"><i class="fa-solid fa-star"></i> 97% Match</div>
+                        <img src="https://images.unsplash.com/photo-1633584210825-e0a95a64e653?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2hhbmdyaWxhJTIwcmVzb3J0JTIwc2thcmR1fGVufDB8fDB8fHww" alt="Shangrila Resort Skardu">
+                    </div>
+                    <div class="dest-content">
+                        <h3>Skardu</h3>
+                        <div class="dest-tags"><span class="tag">Adventure</span><span class="tag">Lakes</span></div>
+                        <p>Gateway to K2 and the world's most beautiful high-altitude deserts.</p>
+                        <div class="dest-footer"><span class="dest-price">From 55k PKR</span></div>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img-container">
+                        <div class="dest-badge"><i class="fa-solid fa-star"></i> 98% Match</div>
+                        <img src="https://images.unsplash.com/photo-1684260668913-67160a506863?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F6aXIlMjBraGFuJTIwbW9zcXVlfGVufDB8fDB8fHww" alt="Wazir Khan Mosque Lahore">
+                    </div>
+                    <div class="dest-content">
+                        <h3>Lahore</h3>
+                        <div class="dest-tags"><span class="tag">History</span><span class="tag">Food</span></div>
+                        <p>Explore the Walled City, Mughal gardens, and famous Food Street.</p>
+                        <div class="dest-footer"><span class="dest-price">From 20k PKR</span></div>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img-container">
+                        <div class="dest-badge"><i class="fa-solid fa-star"></i> 95% Match</div>
+                        <img src="https://images.unsplash.com/photo-1724142923909-fc4b0c3a2a32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3dhdCUyMHZhbGxleSUyMHJpdmVyfGVufDB8fDB8fHww" alt="Swat Valley River">
+                    </div>
+                    <div class="dest-content">
+                        <h3>Swat Valley</h3>
+                        <div class="dest-tags"><span class="tag">Scenic</span><span class="tag">Rivers</span></div>
+                        <p>Emerald green waters and the alpine scenery of Kalam and Malam Jabba.</p>
+                        <div class="dest-footer"><span class="dest-price">From 30k PKR</span></div>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img-container">
+                        <div class="dest-badge"><i class="fa-solid fa-star"></i> 94% Match</div>
+                        <img src="https://images.unsplash.com/photo-1771476831132-199f7b44722c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aXNsYW1hYmFkJTIwc2t5bGluZXxlbnwwfHwwfHx8MA%3D%3D" alt="Islamabad Skyline">
+                    </div>
+                    <div class="dest-content">
+                        <h3>Islamabad</h3>
+                        <div class="dest-tags"><span class="tag">Nature</span><span class="tag">Capital</span></div>
+                        <p>A mix of Margalla hills trails and world-class architecture like Faisal Mosque.</p>
+                        <div class="dest-footer"><span class="dest-price">From 25k PKR</span></div>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img-container">
+                        <div class="dest-badge"><i class="fa-solid fa-star"></i> 96% Match</div>
+                        <img src="https://images.unsplash.com/photo-1725853686114-9a363ebf7356?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEZhaXJ5JTIwTWVhZG93cyUyMG5hbmdhJTIwcGFyYmF0fGVufDB8fDB8fHww" alt="Fairy Meadows Nanga Parbat">
+                    </div>
+                    <div class="dest-content">
+                        <h3>Fairy Meadows</h3>
+                        <div class="dest-tags"><span class="tag">Hiking</span><span class="tag">Camping</span></div>
+                        <p>Camping at the base of Nanga Parbat under a blanket of stars.</p>
+                        <div class="dest-footer"><span class="dest-price">From 40k PKR</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+   
+    <section class="section">
+    <div class="container">
+        <h2>Your Personalized Recommendations</h2>
+        <div id="recommendations-container" class="dest-grid-distinct">
+            <!-- Recommendations yahan aayenge -->
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="cta-section">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2>Stop Searching. Start Packing.</h2>
+            <p>Join 10,000+ modern explorers who automated their travel planning with intelligent recommendations.</p>
+            <a href="login.html" class="btn btn-primary" style="background: white; color: var(--clr-primary); margin-top: 1rem;">Create Your Free Profile →</a>
+        </div>
+    </section>
+</main>
+
+<footer id="about" class="footer">
+    <div class="container">
+        
+        <div class="footer-grid">
+            
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-compass"></i> Travelo
+                </a>
+                <p>Precision travel intelligence that understands you better than any travel agent.</p>
+                
+                <div class="social-icons">
+                    <a href="https://x.com/travelo_00"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/travelo708/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564542875358"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="ethics.html">AI Ethics</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Travelo Technologies Inc. All rights reserved.</p>
+            <p>Made with <span style="color: #ff6b6b;">♥</span> for curious travelers</p>
+        </div>
+    </div>
+</footer>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>

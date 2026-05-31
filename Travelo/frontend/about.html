@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelo | About Us – AI Travel Recommender</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-subhead { font-size: 1.1rem; color: var(--clr-text-muted); max-width: 720px; margin-bottom: 2rem; }
+    .mission-block { background: var(--clr-bg-card); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: 0 12px 28px -12px rgba(0,0,0,0.06); border: 1px solid var(--clr-border-light); margin-bottom: 3rem; }
+    .stats-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; margin: 2.5rem 0; }
+    .stat-item { flex: 1; background: rgba(199,92,60,0.04); padding: 1.5rem; border-radius: 28px; }
+    .stat-number { font-size: 2.5rem; font-weight: 800; color: var(--clr-accent); line-height: 1.2; }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .team-card { background: var(--clr-bg-card); border-radius: 28px; padding: 1.8rem; border: 1px solid var(--clr-border-light); transition: all 0.25s ease; }
+    .team-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px -15px rgba(0,0,0,0.08); }
+    .team-avatar { width: 90px; height: 90px; background: linear-gradient(135deg, #D9C5A7, #C75C3C20); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; color: var(--clr-primary); margin-bottom: 1.2rem; }
+    .team-role { color: var(--clr-accent); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.75rem; }
+    .values-list { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+    .value-badge { background: rgba(199,92,60,0.1); padding: 0.6rem 1.4rem; border-radius: 60px; font-weight: 500; color: var(--clr-accent); }
+    .inner-hero-mini { background: linear-gradient(105deg, #0A1C2F 0%, #1B2F44 100%); border-radius: 0 0 48px 48px; padding: 5rem 0 4rem; margin-bottom: 2rem; }
+    @media (max-width: 768px) { .stat-item { flex-basis: 100%; } }
+  </style>
+</head>
+<body>
+<header class="header" id="header"><div class="container nav-container"><a href="index.html" class="logo"><i class="fas fa-compass"></i> Travelo</a><button class="mobile-menu-btn" id="menuToggleBtn"><i class="fas fa-bars"></i></button></div></header>
+<div class="drawer-overlay" id="drawerOverlay"></div><div class="side-drawer" id="sideDrawer"><div class="drawer-header"><span>Journey with us</span><button class="drawer-close-btn" id="closeDrawerBtn"><i class="fas fa-times"></i></button></div><div class="drawer-nav"><a href="index.html"><i class="fas fa-home"></i> Home</a><a href="about.html"><i class="fas fa-users"></i> About Us</a><a href="careers.html"><i class="fas fa-briefcase"></i> Careers</a><a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></div><div class="drawer-footer"><i class="fas fa-map-pin"></i> AI-powered travel<br>© Travelo 2025</div></div>
+
+<main>
+  <div class="inner-hero-mini"><div class="container"><h1 style="color:white; font-size:3rem;">Crafting journeys,<br>powered by intelligence</h1><p class="page-subhead" style="color:#D9C5A7;">Travelo’s AI learns your preferences — no more generic lists.</p></div></div>
+  <div class="container section">
+    <div class="mission-block"><h2>Our story</h2><p style="font-size:1.1rem;">Born from frustration with one-size-fits-all travel recs. In 2022, data scientists and travel lovers built a platform combining ML with local insights. Today Travelo serves 150k+ explorers across 40+ countries.</p></div>
+    <div class="stats-grid"><div class="stat-item"><div class="stat-number">150K+</div><div>Active travelers</div></div><div class="stat-item"><div class="stat-number">94%</div><div>Match rate</div></div><div class="stat-item"><div class="stat-number">40+</div><div>Countries</div></div></div>
+    <div class="section-header"><h2>Our guiding stars</h2></div><div class="values-list"><span class="value-badge"><i class="fas fa-brain"></i> AI-first</span><span class="value-badge"><i class="fas fa-hand-sparkles"></i> Sustainable</span><span class="value-badge"><i class="fas fa-globe"></i> Authenticity</span><span class="value-badge"><i class="fas fa-heart"></i> Empathy</span></div>
+    <div class="section-header" style="margin-top:3rem;"><h2>Meet the minds</h2></div><div class="team-grid"><div class="team-card"><div class="team-avatar"><i class="fas fa-user-astronaut"></i></div><h3>Shahzaib Sattar</h3><div class="team-role">CEO & Co-founder</div><p>Ex-Google AI researcher</p></div><div class="team-card"><div class="team-avatar"><i class="fas fa-laptop-code"></i></div><h3>Ezza Tasneem</h3><div class="team-role">CTO</div><p>ML models with soul</p></div><div class="team-card"><div class="team-avatar"><i class="fas fa-palette"></i></div><h3>Faiza Zahoor</h3><div class="team-role">Head of Experience</div><p>Local gem curator</p></div></div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="logo"><i class="fas fa-map-marked-alt"></i> Travelo</div><p>Your intelligent travel companion.</p><div class="social-icons"><a href="https://www.instagram.com/travelo708/"><i class="fab fa-instagram"></i></a><a href="https://x.com/travelo_00"><i class="fab fa-twitter"></i></a></div></div><div class="footer-links"><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div></div><div class="footer-newsletter"><h4>Subscribe</h4><form class="newsletter-form"><input type="email" placeholder="Your email"><button type="submit" class="btn btn-primary">→</button></form></div><div class="footer-bottom"><span>© 2026 Travelo — AI Personalized Travel</span></div></div></footer>
+
+<script>const header=document.getElementById('header'),menuToggle=document.getElementById('menuToggleBtn'),drawer=document.getElementById('sideDrawer'),overlay=document.getElementById('drawerOverlay'),closeBtn=document.getElementById('closeDrawerBtn');function openDrawer(){drawer.classList.add('active');overlay.classList.add('active');document.body.style.overflow='hidden';}function closeDrawer(){drawer.classList.remove('active');overlay.classList.remove('active');document.body.style.overflow='';}if(menuToggle)menuToggle.addEventListener('click',openDrawer);if(closeBtn)closeBtn.addEventListener('click',closeDrawer);if(overlay)overlay.addEventListener('click',closeDrawer);document.querySelectorAll('.drawer-nav a').forEach(link=>link.addEventListener('click',closeDrawer));window.addEventListener('scroll',()=>{if(window.scrollY>20)header.classList.add('scrolled');else header.classList.remove('scrolled');});</script>
+</body>
+</html>

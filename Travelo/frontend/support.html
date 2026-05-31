@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo | Support & Help Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0 3rem;
+        }
+        .support-card {
+            background: var(--clr-bg-card);
+            border-radius: 28px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s;
+            border: 1px solid var(--clr-border-light);
+        }
+        .support-card:hover { transform: translateY(-8px); box-shadow: 0 20px 30px -15px rgba(0,0,0,0.08); }
+        .support-icon { font-size: 2.8rem; color: var(--clr-accent); margin-bottom: 1rem; }
+        .support-card h3 { margin-bottom: 0.75rem; }
+        .support-card p { color: var(--clr-text-muted); margin-bottom: 1.5rem; }
+        .contact-form {
+            background: var(--clr-bg-card);
+            border-radius: 32px;
+            padding: 2rem 2.5rem;
+            margin-top: 2rem;
+            border: 1px solid var(--clr-border-light);
+        }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--clr-text-heading); }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 1px solid var(--clr-border-light);
+            border-radius: 20px;
+            font-family: var(--font-main);
+            background: var(--clr-bg-main);
+            transition: 0.2s;
+        }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--clr-accent); box-shadow: 0 0 0 3px rgba(199,92,60,0.2); }
+        .faq-item {
+            border-bottom: 1px solid var(--clr-border-light);
+            padding: 1rem 0;
+        }
+        .faq-question { font-weight: 700; font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question i { transition: transform 0.2s; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: var(--clr-text-muted); padding: 0; }
+        .faq-item.active .faq-answer { max-height: 200px; padding-top: 0.75rem; }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--clr-accent); color: white; width: 48px; height: 48px; border-radius: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: none; z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.25s ease; box-shadow: var(--btn-shadow); }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        @media (max-width: 640px) { .contact-form { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container nav-container">
+        <a href="index.html" class="logo"><i class="fas fa-compass"></i> Travelo</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="side-drawer" id="sideDrawer">
+    <div class="drawer-header"><span><i class="fas fa-route"></i> Travelo</span><button class="drawer-close-btn" id="drawerCloseBtn"><i class="fas fa-times"></i></button></div>
+    <div class="drawer-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+        <a href="terms.html"><i class="fas fa-file-contract"></i> Terms of Service</a>
+        <a href="ethics.html"><i class="fas fa-robot"></i> AI Ethics</a>
+        <a href="support.html"><i class="fas fa-headset"></i> Support</a>
+    </div>
+    <div class="drawer-footer"><p><i class="fas fa-map-pin"></i> Personalized journeys, responsibly.</p><p>&copy; 2025 Travelo AI</p></div>
+</div>
+
+<main>
+    <div class="container" style="padding-top: 7rem;">
+        <div class="section" style="padding-top: 1rem;">
+            <div class="section-header">
+                <h1>Support Center</h1>
+                <p>We’re here to help — get answers, report issues, or share feedback.</p>
+            </div>
+
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Using Recommendations</h3>
+                    <p>How to fine-tune your travel preferences, save itineraries, and interpret AI suggestions.</p>
+                    <a href="#" class="btn btn-outline" style="background: transparent; border-color: var(--clr-accent); color: var(--clr-accent);">Learn more</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><i class="fas fa-user-lock"></i></div>
+                    <h3>Account & Privacy</h3>
+                    <p>Manage your data, delete your account, or understand how we protect your information.</p>
+                    <a href="privacy.html" class="btn btn-outline" style="background: transparent; border-color: var(--clr-accent); color: var(--clr-accent);">Privacy settings</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Feedback</h3>
+                    <p>Report biased or inaccurate recommendations. Help us improve our ethics and fairness.</p>
+                    <a href="#" class="btn btn-outline" style="background: transparent; border-color: var(--clr-accent); color: var(--clr-accent);">Submit feedback</a>
+                </div>
+            </div>
+
+            <h2 style="margin: 2rem 0 1rem;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">How does Travelo personalize recommendations? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">We use a hybrid AI model that analyzes your stated preferences (budget, interests, past trips) and anonymized behavioral signals. The more you interact, the better the suggestions become.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is my travel data shared with third parties? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">No. We never sell personal data. Limited data may be shared only with your explicit consent (e.g., to book a flight via partner API). See our Privacy Policy for full details.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I delete my interaction history? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Yes. Go to Account Settings → Privacy → Delete History. You can also request full account deletion by emailing support@travelo.com.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I report a harmful or biased recommendation? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Click the “Report” button next to any recommendation or contact ethics@travelo.com. Our team reviews all reports within 5 business days.</div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2><i class="fas fa-headset"></i> Still need help?</h2>
+                <p>Fill out the form below and we’ll get back to you within 24 hours.</p>
+                <form id="supportForm">
+                    <div class="form-group"><label>Full name</label><input type="text" placeholder="Your name" required></div>
+                    <div class="form-group"><label>Email address</label><input type="email" placeholder="you@example.com" required></div>
+                    <div class="form-group"><label>Issue category</label><select><option>AI recommendation issue</option><option>Account / login</option><option>Privacy concern</option><option>Billing / partnership</option><option>Other</option></select></div>
+                    <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Describe your question or feedback..."></textarea></div>
+                    <button type="submit" class="btn btn-primary">Send message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <p class="form-note" style="margin-top: 1rem; font-size: 0.85rem;"><i class="fas fa-clock"></i> Response time: Mon–Fri, 9am–6pm EST</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><div class="logo"><i class="fas fa-map-marked-alt"></i> Travelo</div><p>AI-powered travel companion that curates unique, responsible, and personalized journeys.</p><div class="social-icons"><a href="https://www.instagram.com/travelo708/"><i class="fab fa-instagram"></i></a><a href="https://x.com/travelo_00"><i class="fab fa-twitter"></i></a><a href="https://www.facebook.com/profile.php?id=61564542875358"><i class="fab fa-facebook"></i></a></div></div>
+            <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="#">Destinations</a></li><li><a href="#">How It Works</a></li></ul></div>
+            <div class="footer-links"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="ethics.html">AI Ethics</a></li></ul></div>
+            <div class="footer-links"><h4>Support</h4><ul><li><a href="support.html">Help Center</a></li><li><a href="support.html">Contact Us</a></li><li><a href="#">Status</a></li></ul></div>
+        </div>
+        <div class="footer-newsletter"><h4>Get travel inspiration</h4><p>Subscribe for personalized recommendations and ethical travel insights.</p><form class="newsletter-form"><input type="email" placeholder="Your email address" required><button type="submit" class="btn btn-primary">Subscribe</button></form></div>
+        <div class="footer-bottom"><span>&copy; 2026 Travelo — Intelligent & responsible travel.</span><p>Made with <span style="color: #ff6b6b;">♥</span> for curious travelers</p>
+</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+    (function() {
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const drawer = document.getElementById('sideDrawer');
+        const overlay = document.getElementById('drawerOverlay');
+        const closeBtn = document.getElementById('drawerCloseBtn');
+        const header = document.getElementById('header');
+        const backBtn = document.getElementById('backToTop');
+        function openDrawer() { drawer.classList.add('active'); overlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeDrawer() { drawer.classList.remove('active'); overlay.classList.remove('active'); document.body.style.overflow = ''; }
+        if(mobileBtn) mobileBtn.addEventListener('click', openDrawer);
+        if(closeBtn) closeBtn.addEventListener('click', closeDrawer);
+        if(overlay) overlay.addEventListener('click', closeDrawer);
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 80) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            if(backBtn) { if(window.scrollY > 400) backBtn.classList.add('show'); else backBtn.classList.remove('show'); }
+        });
+        if(backBtn) backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeDrawer(); });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const parent = q.closest('.faq-item');
+                parent.classList.toggle('active');
+            });
+        });
+        // Simple form alert
+        const form = document.getElementById('supportForm');
+        if(form) form.addEventListener('submit', (e) => { e.preventDefault(); alert('Thank you! Our support team will reply shortly.'); form.reset(); });
+    })();
+</script>
+</body>
+</html>
